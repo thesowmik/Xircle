@@ -1,0 +1,17 @@
+#!/bin/bash
+apt update -y
+apt install git -y
+apt install python2 -y
+apt install curl -y
+pip2 install lolcat
+apt install figlet -y
+cd ~
+git clone https://github.com/BloodySowmik/Xircle
+cd Xircle
+cp xircle $PREFIX/bin/xircle
+chmod +x $PREFIX/bin/xircle
+figlet -ct -f slant "Done"
+echo "Run by \"xircle\" Command." 
+sleep 2
+xdg-open https://facebook.com/FFsowmik
+
